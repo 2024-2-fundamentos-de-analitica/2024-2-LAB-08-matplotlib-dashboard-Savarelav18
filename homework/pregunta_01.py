@@ -38,18 +38,13 @@ def pregunta_01():
     * Su código debe crear la carpeta `docs` si no existe.
 
     """
-    df = load_data("files\input\shipping-data.csv")
+    df = pd.read_csv("files\input\shipping-data.csv")
 
     create_visual_for_shipping_per_warehouse(df)
     create_visual_for_mode_of_shipment(df)
     create_visual_for_average_customer_rating(df)
     create_visual_for_weight_distribution(df)
     create_dashboard()
-
-
-def load_data(input_file):
-    df = pd.read_csv(input_file)
-    return df
 
 
 def save_file(name, output_directory="docs"):
