@@ -38,7 +38,7 @@ def pregunta_01():
     * Su código debe crear la carpeta `docs` si no existe.
 
     """
-    df = pd.read_csv("files\input\shipping-data.csv")
+    df = pd.read_csv("files/input/shipping-data.csv")
 
     create_visual_for_shipping_per_warehouse(df)
     create_visual_for_mode_of_shipment(df)
